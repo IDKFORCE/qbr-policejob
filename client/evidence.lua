@@ -67,8 +67,8 @@ local function DropBulletCasing(weapon, ped)
 end
 
 local function DnaHash(s)
-    local h = string.gsub(s, ".", function(c)
-        return string.format("%02x", string.byte(c))
+    local h = string.gsub(s, '.', function(c)
+        return string.format('%02x', string.byte(c))
     end)
     return h
 end
